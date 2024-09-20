@@ -1,4 +1,4 @@
-import { Post } from "@/api/queries/posts/types";
+import { Post } from "@/api/posts/types";
 
 /**
  * Properties for a content component.

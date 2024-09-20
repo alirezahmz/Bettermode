@@ -3,13 +3,13 @@
 import { useState } from "react";
 import { Loading } from "@/components/ui/loading";
 import { CenteredView } from "@/components/ui/centeredView";
-import { useGetPostsQuery } from "@/api/queries/posts/query";
-import { useAddReactionMutation } from "@/api/queries/post/mutation";
-import { GET_POSTS } from "@/api/queries/posts/service";
+import { useGetPostsQuery } from "@/api/posts/query";
+import { useAddReactionMutation } from "@/api/post/mutation";
+import { GET_POSTS } from "@/api/posts/service";
 import Link from "next/link";
 import { routes } from "@/constants";
 import { Card } from "@/components/containers/post/card";
-import { Post } from "@/api/queries/posts/types";
+import { Post } from "@/api/posts/types";
 
 export const PER_PAGE = 4;
 

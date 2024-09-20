@@ -2,12 +2,12 @@
 
 import { useParams } from "next/navigation";
 import { Loading } from "@/components/ui/loading";
-import { useGetPostQuery } from "@/api/queries/post/query";
-import { GET_POST_DETAILS } from "@/api/queries/post/service";
+import { useGetPostQuery } from "@/api/post/query";
+import { GET_POST_DETAILS } from "@/api/post/service";
 import Card from "@/components/containers/post/card/Card";
 import Header from "@/components/containers/post/header/Header";
 import { CenteredView } from "@/components/ui/centeredView";
-import { useAddReactionMutation } from "@/api/queries/post/mutation";
+import { useAddReactionMutation } from "@/api/post/mutation";
 
 function PostDetails() {
   const params = useParams();
